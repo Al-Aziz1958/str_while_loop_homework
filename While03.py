@@ -6,4 +6,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    k=0
+    m=0
+    i=0
+    while i<len(s):
+        if s[i].isdigit():
+             k+=1
+        if s[i].isalpha():
+            m+=1
+        i+=1
+    return len(s)-(k+m)
+print(main('sal om%%10'))

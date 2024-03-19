@@ -7,3 +7,11 @@ def main(s):
     Returns:
         int: return answer
     """
+    k=0
+    i=0
+    while i<len(s):
+        if s[i] in 'AaEeIiOoUu':
+            k+=1
+        i+=1
+    return len(s)-k
+print(main('asxAcdco'))

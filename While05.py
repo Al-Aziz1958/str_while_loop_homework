@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    k=0
+    i=0
+    while i<len(s):
+        if s[i].islower():
+            k+=1
+        i+=1
+    return k
+print(main('Salom'))

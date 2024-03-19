@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    sum1=0
+    i=0
+    while i<len(s):
+        if s[i].isdigit():
+                sum1+=int(s[i])
+        i+=1
+    return sum1
+print(main('19ghj,2'))
